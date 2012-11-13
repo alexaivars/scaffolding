@@ -4,4 +4,4 @@ node_modules
 .travis.yml
 *.orig
 *.bak
-specs/javascript/**/*.js
+specs/javascripts/**/*.js

@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 					bare: true
 				},
 				files: {
-					'specs/javascript/*.js': ['specs/coffeescript/**/*.coffee']
+					'specs/javascripts/*.js': ['specs/coffeescripts/**/*.coffee']
 				}
 			}
 		},
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 				browser: true,
 				camelcase: true,
 				unused: true,
-				trailing: true
+				trailing: false
 			},
 			globals: {
 				jQuery: true
@@ -87,6 +87,7 @@ module.exports = function(grunt) {
 	grunt.loadTasks('tasks');
 	
 	// Default task.
-	grunt.registerTask('build','sass coffee jasmine lint');
+	grunt.registerTask('test','jasmine lint');
+	grunt.registerTask('default','sass coffee jasmine lint');
 
 };
