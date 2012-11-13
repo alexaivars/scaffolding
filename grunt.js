@@ -69,11 +69,11 @@ module.exports = function(grunt) {
 		},		
 		watch: {
 			code: {
-				files: 'src/**/*.coffee',
+				files: 'source/**/*.coffee',
 				tasks: 'coffee:source'
 			},
 			styles: {
-				files: 'src/**/*.scss',
+				files: 'source/**/*.scss',
 				tasks: 'sass'
 			},
 			tests: {
