@@ -63,7 +63,9 @@ module.exports = function(grunt) {
 		jasmine : {
 			src : 'public/**/*.js',
 			specs : ['specs/**/*_spec.js'],
-			helpers : 'specs/helpers/*.js'
+			helpers : 'specs/helpers/*.js',
+			template : 'specs/fixtures/runner/standard.tmpl'
+			
 		},		
 		watch: {
 			code: {
